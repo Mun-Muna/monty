@@ -19,7 +19,6 @@ void helper(FILE *_file, instruction_t _choice[], stack_t **_stack)
 		token_1 = strtok(line, " ");
 		if (token_1 != NULL)
 		{
-			token_2 = strtok(NULL, " ");
 			for (i = 0; _choice[i].opcode != NULL; i++)
 			{
 				if (strcmp(token_1, _choice[i].opcode) == 0)
